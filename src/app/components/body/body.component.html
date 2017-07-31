@@ -1,0 +1,26 @@
+<div class="row justify-content-center pl-4 pr-4">
+  <div class="col-md-6 d-flex flex-column align-items-center">
+    <h1 class="p-2">*ngIf</h1>
+
+    <button type="button" name="button" class="mb-4 btn btn-outline-primary"
+    (click)="mostrar = !mostrar"
+    >Mostrar/Ocultar</button>
+
+    <div *ngIf="mostrar" class="card card-inverse card-primary mb-3 text-center ">
+      <div class="card-block">
+        <blockquote class="card-blockquote">
+          <p>{{  frase.mensaje }}</p>
+          <footer>{{frase.autor}}</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 d-flex flex-column align-items-center">
+    <h1 class="p-2">*ngFor</h1>
+    <ul class="list-group w-75">
+      <li class="list-group-item" *ngFor="let sobrenombre of personaje; let i = index">
+        {{i+1}}. {{sobrenombre}}
+      </li>
+    </ul>
+  </div>
+</div>
