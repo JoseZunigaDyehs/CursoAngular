@@ -12,5 +12,5 @@ export class BodyComponent {
     autor: "Hordatoj"
   }
 
-  personaje:string[] = ['Nacho','Jose','Joseuaño','Asw','Dyehs'];
+  personaje:string[] = ['Nacho','Jose','Josueño','Asw','Dyehs'];
 }
